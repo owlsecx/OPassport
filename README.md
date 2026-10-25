@@ -18,13 +18,18 @@
 
 ## 📌 Overview
 
-Advanced IP/Domain geolocation with multi-API fallback, ║
+OPassport is an IP and domain geolocation intelligence suite. It resolves geolocation through multiple API providers with automatic fallback and adds WHOIS, DNS, threat-intelligence and offline IP-risk classification. Running it without flags opens its dark-mode GUI.
 
 ---
 
 ## ✨ Features
 
-- IP/domain geolocation with multi-API fallback, WHOIS, offline risk scoring & batch lookup
+- Multi-API IP/domain geolocation with automatic fallback
+- Offline IP classification and RFC/special-use categorisation with no network access
+- Offline IP risk-scoring demonstration
+- WHOIS, DNS record and threat-intelligence lookups
+- CSV/JSON/TXT export, including writing JSON results to a file
+- Dark-mode GUI alongside CLI flags for scripting
 
 ---
 
@@ -38,7 +43,10 @@ Advanced IP/Domain geolocation with multi-API fallback, ║
 ## 🚀 Usage
 
 ```bash
-./OPassport
+./OPassport --classify 8.8.8.8
+./OPassport --lookup example.com --json-out out.json
+./OPassport --risk-demo 10.0.0.1
+./OPassport --help
 ```
 
 ---
